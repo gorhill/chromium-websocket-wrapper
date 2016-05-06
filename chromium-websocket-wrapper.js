@@ -160,7 +160,6 @@
          */
         var channelResponseReceived = function (wrapper, blockConnection) {
 
-            console.log('response received: ' + blockConnection);
             var bag = map.get(wrapper);
             if (blockConnection) {
                 if (bag.properties.onerror) {
