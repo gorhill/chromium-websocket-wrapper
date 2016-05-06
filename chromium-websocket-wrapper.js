@@ -143,11 +143,11 @@
     })();
     
     /**
-     * WebSocket wrapper implementation.
-     * https://github.com/gorhill/chromium-websocket-wrapper
+     * WebSocket wrapper.
+     * 
+     * @param channel Messaging channel (either imageChannel or messageChannel)
      */
     (function(channel) {
-        'use strict';
         var Wrapped = window.WebSocket;
         var map = new WeakMap();
 
